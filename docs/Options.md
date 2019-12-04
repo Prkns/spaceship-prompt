@@ -20,6 +20,7 @@ SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
   host          # Hostname section
+  gatsby.js     # Gatsby.js section
   git           # Git section (git_branch + git_status)
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
@@ -605,6 +606,18 @@ Disabled by default. Set `SPACESHIP_EXIT_CODE_SHOW` to `true` in your `.zshrc`, 
 | `SPACESHIP_EXIT_CODE_SUFFIX` | ` ` | Suffix after exit code section |
 | `SPACESHIP_EXIT_CODE_SYMBOL` | `✘` | Character to be shown before exit code |
 | `SPACESHIP_EXIT_CODE_COLOR` | `red` | Color of exit code section |
+
+### Gatsby.js (`gatsbyjs`)
+
+Gatsby.js section is shown only in directories that contain any of the following files: `gatsby-node.js, gatsby-config.js, gatsby-ssr.js` or have `gatsby` installed in the `node_modules` directory.
+
+| Variable | Default | Meaning |
+| :------- | :-----: | ------- |
+| `SPACESHIP_GATSBYJS_SHOW` | `true` | Current Gatsby.js section |
+| `SPACESHIP_GATSBYJS_PREFIX` | `$SPACESHIP_PROMPT_DEFAULT_PREFIX` | Prefix before Gatsby.js section |
+| `SPACESHIP_GATSBYJS_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after Gatsby.js section |
+| `SPACESHIP_GATSBYJS_SYMBOL` | `Gatsby.js v` | Text to be shown before Gatsby.js version |
+| `SPACESHIP_GATSBYJS_COLOR` | `055` | Color of Gatsby.js section |
 
 ## Need more?
 

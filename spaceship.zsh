@@ -45,6 +45,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     dir           # Current directory section
     host          # Hostname section
     git           # Git section (git_branch + git_status)
+    gatsbyjs      # Gatsby.js section
     hg            # Mercurial section (hg_branch  + hg_status)
     package       # Package version
     node          # Node.js section
